@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>制作一个简单的菜单动画效果</title>
+	<link rel="stylesheet" href="css/1.css">
+</head>
+
+<body>
+	<div class="container">
+		<div id="title">前端学院</div>
+		<div id="line"></div>
+		<input type="button" id="btn" value="切换样式">
+	</div>
+	<script>
+		let btn = document.getElementById('btn')
+		let title = document.getElementById('title')
+		let line = document.getElementById('line')
+		btn.onclick = function () {
+			line.classList.toggle('line')
+			title.classList.toggle('title')
+		}
+	</script>
+</body>
+
+</html>
